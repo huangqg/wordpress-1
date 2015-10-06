@@ -1,8 +1,32 @@
-# About this Repo
+中文版Wordpress
 
-This is the Git repo of the official Docker image for [wordpress](https://registry.hub.docker.com/_/wordpress/). See the
-Hub page for the full readme on how to use the Docker image and for information
-regarding contributing and issues.
+注意：
+创建容器时需要设置以下环境变量
 
-The full readme is generated over in [docker-library/docs](https://github.com/docker-library/docs),
-specificially in [docker-library/docs/wordpress](https://github.com/docker-library/docs/tree/master/wordpress).
+`WORDPRESS_DB_HOST <localhost:3306>`
+
+`WORDPRESS_DB_USER <admin>`
+
+`WORDPRESS_DB_PASSWORD <admin>`
+
+WordPress是一种使用PHP语言开发的博客平台，用户可以在支持PHP和MySQL数据库的服务器上架设属于自己的网站。也可以把 WordPress当作一个内容管理系统（CMS）来使用。
+WordPress是一款个人博客系统，并逐步演化成一款内容管理系统软件，它是使用PHP语言和MySQL数据库开发的。用户可以在支持 PHP 和 MySQL数据库的服务器上使用自己的博客。
+WordPress有许多第三方开发的免费模板，安装方式简单易用。不过要做一个自己的模板，则需要你有一定的专业知识。比如你至少要懂的标准通用标记语言下的一个应用HTML代码、CSS、PHP等相关知识。
+WordPress官方支持中文版，同时有爱好者开发的第三方中文语言包，如wopus中文语言包。WordPress拥有成千上万个各式插件和不计其数的主题模板样式。
+
+优点
+
+* WordPress 功能强大、扩展性强，这主要得益于其插件众多，易于扩充功能，基本上一个完整网站该有的功能，通过其第三方插件都能实现所有功能；
+* wordpress搭建的博客对seo搜索引擎友好，收录也快，排名靠前；
+* 适合DIY，如果你是喜欢丰富内容的网站，那么wordpress可以很好地符合你的胃口。
+* 主题很多，网站上一大片都是wordpress的主题，各色各样，应有尽有！
+* wordpress备份和网站转移比较方便，原站点使用站内工具导出后，使用WordPress Importer插件就能方便地将内容导入新网站。
+* wordpress有强大的社区支持，有上千万的开发者贡献和审查wordpress，所以wordpress是安全并且活跃的。
+
+缺点
+
+* wordpress源码系统初始内容基本只是一个框架，需要时间自己搭建；
+* 插件虽多，但是不能安装太多插件，否则会拖累网站速度和降低用户体验；
+* 服务器空间选择自由较小！
+* 静态化较差，确切地说是真正静态化做得不好，如果要想对整个网站生成真正静态化页面，还做不好，最多只能生成首页和文章页静态页面，所以只能对整站实现伪静态化!
+* wordpress的博客程序定位，简单的数据库层等都注定了他不能适应大数据。
