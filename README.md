@@ -1,4 +1,4 @@
-中文版Wordpress
+中文版 Wordpress
 
 注意：
 创建容器时需要设置以下环境变量
